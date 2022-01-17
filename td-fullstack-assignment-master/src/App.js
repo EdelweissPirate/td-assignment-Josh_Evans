@@ -35,7 +35,7 @@ class App extends Component {
           <input type="text" value={this.state.value} onChange={this.handleChange} />
           { !error &&
             <p>
-              <span>Result for input '{userInput}' is '{result}'</span>
+              <span>Result for input '{userInput}' is '{JSON.stringify(result)}'</span>
             </p>
           }
           { error &&
